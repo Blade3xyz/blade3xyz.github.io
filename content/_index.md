@@ -1,5 +1,5 @@
 ---
-title: "Blade3"
+title: "Blade³"
 description: "Remote port-forwarding tool"
 lead: "Blade3 is a free, and open-source port-forwarding tool"
 date: 2023-09-07T16:33:54+02:00

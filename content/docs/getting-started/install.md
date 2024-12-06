@@ -35,11 +35,11 @@ brew install ruby
 You can use the following one-liner, to automatically install blade3. It will ask you which components you wish to install.
 
 {{< callout context="caution" title="Security notice!" icon="outline/alert-triangle" >}}
-Piping curl into bash can be controversial. If you want to install it see the [Alternative installation methods](#alternative-installation-methods) for Linux
+Piping curl into any interpreter can be controversial. If you want to install it see the [Alternative installation methods](#alternative-installation-methods) for Linux
 {{< /callout >}}
 
 ```bash
-/usr/bin/env bash -c "$(curl -fsSL https://install.blade3.xyz/wizard.sh)"
+/usr/bin/env ruby -e "$(curl -fsSL https://install.blade3.xyz/install.rb)"
 ```
 
 ## Linux
@@ -57,21 +57,21 @@ sudo dnf install ruby # Fedora
 You can use the following one-liner, to automatically install blade3. It will ask you which components you wish to install.
 
 {{< callout context="caution" title="Security notice!" icon="outline/alert-triangle" >}}
-Piping curl into bash can be controversial. If you want to install it another way see the following section.
+Piping curl into any interpreter can be controversial. If you want to install it another way see the following section.
 {{< /callout >}}
 
 ```bash
-/usr/bin/env bash -c "$(curl -fsSL https://install.blade3.xyz/wizard.sh)"
+/usr/bin/env ruby -e "$(curl -fsSL https://install.blade3.xyz/install.rb)"
 ```
 
 ### Alternative installation methods
 
-#### Install script WITHOUT ```curl | bash```
+#### Install script WITHOUT ```curl | ruby```
 If you wish to pre-read the installer script before you execute it
 ```bash
-curl -fsSL https://install.blade3.xyz/wizard.sh -O
-vim wizard.sh # Pre-read the installer script!
-sh wizard.sh # Execute the wizard
+curl -fsSL https://install.blade3.xyz/install.rb -O
+vim install.rb # Pre-read the installer script!
+sh install.rb # Execute the wizard
 ```
 
 #### Building from source
